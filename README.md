@@ -4,6 +4,12 @@ Arsitektur diagram :
 
 ![image](https://user-images.githubusercontent.com/23251706/146795722-6a7bf249-f742-4820-ba26-061a1b20b637.png)
 
+
+### 0. Create Resource Group
+```console
+az group create --resource-group RG-POS-Demo --location southeastasia
+```
+
 ### 1. Create Resources
 Azure CLI
 ```console
