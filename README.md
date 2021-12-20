@@ -1,5 +1,5 @@
 
-# Handson : Deploy Aplikasi Monolith di App Service
+# Handson 1 : Deploy Aplikasi Monolith di App Service
 Arsitektur diagram : 
 
 ![image](https://user-images.githubusercontent.com/23251706/146795722-6a7bf249-f742-4820-ba26-061a1b20b637.png)
