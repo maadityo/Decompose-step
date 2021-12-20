@@ -24,14 +24,17 @@ Azure CLI
 ```console
 git clone https://github.com/MicrosoftDocs/mslearn-microservices-architecture.git ~/mslearn-microservices-architecture
 cd ~/mslearn-microservices-architecture/src/before
-Run the following command to zip up the application code, which we use to deploy to the app service.
 ```
+Run the following command to zip up the application code, which we use to deploy to the app service.
+
+
 ### 3. Unzip code yang akan dipakai
 Bash
 ```console
 zip -r DroneDelivery-before.zip .
-Run the following command to set a variable with the name of your app service.
 ```
+Run the following command to set a variable with the name of your app service.
+
 
 ### 4. Set variable app service
 Run the following command to configure the app service to run a build as part of the deployment.
