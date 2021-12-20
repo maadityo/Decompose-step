@@ -6,7 +6,7 @@ Arsitektur diagram :
 
 
 
-### 0. Drone delivery before
+### Drone delivery before
 ```console
 public class PackageProcessor : IPackageProcessor
     {
@@ -19,7 +19,7 @@ public class PackageProcessor : IPackageProcessor
     }
 ```
 
-### 1. Drone delivery after
+### Drone delivery after
 Azure CLI
 ```console
 public class PackageServiceCaller : IPackageProcessor
@@ -43,7 +43,7 @@ public class PackageServiceCaller : IPackageProcessor
     }
 ```
 
-### 2. Deploy microservices in Azure Function
+### PackageServiceFunction
 Azure CLI
 ```console
 public static class PackageServiceFunction
@@ -64,7 +64,7 @@ public static class PackageServiceFunction
 
 
 
-### 3. Deploy Azure function \ function app
+### 1. Deploy Azure function \ function app
 Bash
 ```console
 APPSERVICENAME="$(az webapp list \
@@ -79,7 +79,7 @@ FUNCTIONAPPNAME="$(az functionapp list \
 
 
 
-### 4. Set variable app service
+### 2. Set variable app service
 Run the following command to configure the app service to run a build as part of the deployment.
 
 ```console
@@ -90,7 +90,7 @@ APPSERVICENAME="$(az webapp list \
 
 ```
 
-### 5. Build dan zip code aplikasi untuk function app
+### 3. Build dan zip code aplikasi untuk function app
 Azure CLI
 ```console
 cd ~/mslearn-microservices-architecture/src/after
@@ -100,7 +100,7 @@ zip -r PackageService.zip .
 ```
 
 
-### 6. Push Code ke Function App
+### 4. Push Code ke Function App
 Azure CLI
 ```console
 az functionapp deployment source config-zip \
@@ -110,7 +110,7 @@ az functionapp deployment source config-zip \
 ```
 
 
-### 7. Deploy microservices Drone delivery 
+### 5. Deploy microservices Drone delivery 
 ```console
 RESOURCEGROUPID=$(az group show \
                     --resource-group [sandbox resource group] \
@@ -125,7 +125,7 @@ echo "FunctionName - $FUNCTIONAPPNAME"
 echo "FunctionCode - $FUNCTIONCODE"
 ```
 
-### 8. Edit Appsettings.json
+### 6. Edit Appsettings.json
 In the code editor, replace the values PackageServiceUri and PackageServiceFunctionCode. In PackageServiceUri, replace <FunctionName> with the name of your function app.
 
 In PackageServiceFunctionCode, replace the <FunctionCode> with the function code you retrieved. Your appsettings.json file should look similar to this:
@@ -149,7 +149,7 @@ JSON
 ```
 Press Ctrl+S to save the file, and then Ctrl+Q to close the code editor.
 
-### 9. Deploy updated aplikasi ke app service
+### 7. Deploy updated aplikasi ke app service
 Azure CLI
 ```console
 zip -r DroneDelivery-after.zip . -x \*/obj/\* \*/bin/\*
