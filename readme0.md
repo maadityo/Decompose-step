@@ -1,1 +1,12 @@
-# 1. Akses Powershell \ bash via azure portal
+## 1. Akses Powershell \ bash via azure portal
+
+![image](https://user-images.githubusercontent.com/23251706/146897125-8f809225-0cfe-4baa-875f-185cfa91cedd.png)
+
+## 2. Pilih Bash 
+![image](https://user-images.githubusercontent.com/23251706/146897215-e1588a14-0925-4ede-8aa5-220fae1b2925.png)
+
+## 3. Create Strorage Account
+![image](https://user-images.githubusercontent.com/23251706/146897269-53b4850c-50a2-44de-a713-22f0f8336295.png)
+
+## 4. Ready to use bash 
+![image](https://user-images.githubusercontent.com/23251706/146897624-7b47ca54-2baf-4337-92f0-8fae7e6b6501.png)
